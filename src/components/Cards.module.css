@@ -1,0 +1,23 @@
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    gap: 20px; /* space between the cards */
+  }
+  
+  @media (max-width: 1200px) {
+    .cardsContainer {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cardsContainer {
+      grid-template-columns: 1fr; /* One column on mobile screens */
+    }
+  }
+  
+  .card1 {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
