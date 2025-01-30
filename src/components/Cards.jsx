@@ -75,6 +75,7 @@ const Cards = ({ data = [] }) => {
             </div>
           </div>
         );
+        
       })}
     </div>
   );

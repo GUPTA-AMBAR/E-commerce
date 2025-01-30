@@ -3,8 +3,8 @@ import React, { createContext, useState, useContext } from 'react';
 // Create a context for login state
 export const useLogin = createContext(null);
 
-export const UseLoginProvider = ({ children }) => {
-  const [login, setLogin] = useState(false);
+export const UseLoginProvider = ({ children}) => {
+  const [login , setLogin] = useState(false);
 
   // Toggle login state
   const handleLogin = () => {
@@ -12,7 +12,7 @@ export const UseLoginProvider = ({ children }) => {
   };
 
   return (
-    <useLogin.Provider value={{ login, handleLogin}}>
+    <useLogin.Provider value={{login, handleLogin}}>
       {children}
     </useLogin.Provider>
   );
